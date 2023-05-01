@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  -name: fact_page_views
+- name: fact_page
   description: 'all page view events'
   columns:
     - name: event_guid

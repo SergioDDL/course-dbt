@@ -2,12 +2,12 @@ with dim_products_orders as
 (
 
 SELECT 
-name,
-price,
-inventory,
-SUM(quantity) as orders_per_product
-from DEV_DB.DBT_SERGIOD.STG_POSTGRES_ORDER_ITEMS A
-LEFT JOIN DEV_DB.DBT_SERGIOD.STG_POSTGRES_PRODUCTS B
+B.name,
+B.price,
+B.inventory,
+SUM(A.quantity) as orders_per_product
+from {{('stg_postgres_order_items')}} A
+LEFT JOIN {{('stg_postgres_products')}} B
 on A.product_guid = B.product_guid
 group by 1,2,3
 )
