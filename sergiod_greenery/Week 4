@@ -1,0 +1,39 @@
+Which products had their inventory change from week 3 to week 4?
+
+Monstera
+Pothos
+Philodendron
+ZZ Plant
+String of pearls
+Bamboo
+
+
+
+Now that we have 3 weeks of snapshot data, can you use the inventory changes to determine which products had the most fluctuations in inventory?
+
+yes we can use inventory changes to determine which had most fluctuations in inventory. as follows. 
+String pearls had 58
+Pothos had 40
+Philodendron had 36
+ZZ Plant had 36
+Monsera had 27
+Bamboo had 12
+
+How are our users moving through the product funnel? Which steps in the funnel have largest drop off points?
+
+
+Sessions with any event of type page_view - 572
+
+Sessions with any event of type add_to_cart - 466
+
+Sessions with any event of type checkout - 358
+
+
+3A. dbt next steps for you 
+My company is considering using dbt. I will pitch it as a tool that will help the company build powerful and consistent models. This in turn will be instrumental in 
+having reliable data against our KPI's. The power of tests, snapshots and documentation makes this tool ideal. 
+
+The skill i have picked up is how to think logically and SQL.
+
+3B. Setting up for production / scheduled dbt run of your project 
+I will look into using Apache Airflow via Astronomer. 
